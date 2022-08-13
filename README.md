@@ -3,6 +3,7 @@
 ### Job Screen ( Assignment for 14/ 8/ 2022)
 A new Flutter project.
 
+## TODO:
 - [x] Organizing Directory
 - [x] Creating Model
 - [x] Drop Down Button for Type of the Job
