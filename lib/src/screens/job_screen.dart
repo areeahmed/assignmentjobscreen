@@ -4,10 +4,10 @@ class JobScreenPage extends StatefulWidget {
   JobScreenPage({Key? key}) : super(key: key);
 
   @override
-  State<JobScreenPage> createState() => _JobScreenPageState();
+  State<JobScreenPage> createState() => deferent();
 }
 
-class _JobScreenPageState extends State<JobScreenPage> {
+class deferent extends State<JobScreenPage> {
   List<String> citysList = [
     'Erbil',
     'Duhok',
@@ -159,6 +159,7 @@ class _JobScreenPageState extends State<JobScreenPage> {
   }
 
   // this is the style of header text
+  // Have Font Weight Bold and font Size 24
   TextStyle headerTextStyle() {
     return TextStyle(
       fontWeight: FontWeight.bold,
@@ -174,24 +175,33 @@ class _JobScreenPageState extends State<JobScreenPage> {
   }
 
   // Information Header Text Style [ City , Category , ... etc]
+  // Font Weight is BOLD.
   TextStyle informationHeaderOfInputsTextStyle() {
     return TextStyle(
       fontWeight: FontWeight.bold,
     );
   }
 
-  // Drop Down Button
+  // Drop Down Button form field
+  // required 2 parameter ( selectedItem and List of Items)
+  // List of items is the items that will show when drop down is pressed
+  // Sized Box used to resize the Drop Down button : Size ( 350 )
+  // the size will be different for other platforms
+  // the drop down button controller will return String
+  // using ( drop DownItemStyle() ) is a method that user define is this file
   Widget dropDownButton(
       {required String? selectedItem, required List<String> itemsList}) {
     return SizedBox(
       width: 350,
       child: DropdownButtonFormField<String>(
           decoration: InputDecoration(
+              focusedBorder:
+                  OutlineInputBorder(borderSide: BorderSide(color: Colors.red)),
               enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(5),
                   borderSide: BorderSide(
                     color: Colors.red,
-                    width: 3,
+                    width: 1,
                   ))),
           value: selectedItem,
           items: itemsList
@@ -240,7 +250,11 @@ class _JobScreenPageState extends State<JobScreenPage> {
       width: 340,
       child: TextField(
         controller: textController,
-        decoration: InputDecoration(label: Text(name)),
+        decoration: InputDecoration(
+            labelStyle: TextStyle(color: Colors.red),
+            label: Text(name),
+            focusedBorder:
+                OutlineInputBorder(borderSide: BorderSide(color: Colors.red))),
       ),
     );
   }
