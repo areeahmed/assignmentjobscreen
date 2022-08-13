@@ -12,8 +12,8 @@ A new Flutter project.
 - [x] text field for the organization
 - [x] Drop down button for the City
 - [x] Drop down button for Category of the jobs
-- []  Pick time Start Date
-- []  Pick time Expire Date
+- [ ] Pick time Start Date
+- [ ] Pick time Expire Date
 
 
 
