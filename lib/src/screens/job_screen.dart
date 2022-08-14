@@ -19,20 +19,12 @@ class deferent extends State<JobScreenPage> {
 
   List<String> typeList = ['Full Time', 'Part Time', 'Remote', 'Intern'];
 
-  List<String> categoryList = [
-    'Accounting and Consulting',
-    'Admin Support',
-    'Customer Service',
-    'Data Science and Analysis',
-    'Design and Creative',
-    'IT and Networking',
-    'Web Development',
-    'Mobile Development',
-    'Software Development'
-  ];
+  List<String> categoryList = ['one', 'Two', 'Three', 'Four', 'Five'];
+
   String? selectedtypeOfJob = 'Full Time';
   String? selectdCity = 'Erbil';
   String? selectedCatigory = 'Accounting and Consulting';
+
   TextEditingController titleTextEditingController = TextEditingController();
   TextEditingController descriptionTextEditingController =
       TextEditingController();
@@ -62,11 +54,8 @@ class deferent extends State<JobScreenPage> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Container(
-                margin: EdgeInsets.only(top: 40),
+                margin: EdgeInsets.only(top: 40, bottom: 20),
                 child: Image.asset('assets/images/job.png'),
-              ),
-              Container(
-                margin: EdgeInsets.all(50),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
