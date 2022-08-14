@@ -23,7 +23,7 @@ class deferent extends State<JobScreenPage> {
 
   String? selectedtypeOfJob = 'Full Time';
   String? selectdCity = 'Erbil';
-  String? selectedCatigory = 'Accounting and Consulting';
+  String? selectedCatigory = 'one';
 
   TextEditingController titleTextEditingController = TextEditingController();
   TextEditingController descriptionTextEditingController =
