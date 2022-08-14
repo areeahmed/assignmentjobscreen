@@ -41,6 +41,8 @@ class deferent extends State<JobScreenPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+          elevation: 0,
+          backgroundColor: Colors.transparent,
           centerTitle: true,
           title: Text(
             'JOB INFO',
@@ -48,6 +50,7 @@ class deferent extends State<JobScreenPage> {
           ),
           actions: [
             IconButton(
+              color: Colors.red,
               onPressed: () {},
               icon: Icon(Icons.save),
             )
@@ -161,6 +164,7 @@ class deferent extends State<JobScreenPage> {
   // Have Font Weight Bold and font Size 24
   TextStyle headerTextStyle() {
     return TextStyle(
+      color: Colors.red,
       fontWeight: FontWeight.bold,
       fontSize: 20,
     );
