@@ -44,11 +44,22 @@ class deferent extends State<JobScreenPage> {
   TextEditingController titleTextEditingController = TextEditingController();
   TextEditingController descriptionTextEditingController =
       TextEditingController();
-
-  DateTime date = DateTime.now();
+  TextEditingController dateController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+          centerTitle: true,
+          title: Text(
+            'JOB INFO',
+            style: headerTextStyle(),
+          ),
+          actions: [
+            IconButton(
+              onPressed: () {},
+              icon: Icon(Icons.save),
+            )
+          ]),
       body: Center(
         child: SingleChildScrollView(
           reverse: true,
@@ -61,10 +72,6 @@ class deferent extends State<JobScreenPage> {
               ),
               Container(
                 margin: EdgeInsets.all(50),
-                child: Text(
-                  'JOB INFO',
-                  style: headerTextStyle(),
-                ),
               ),
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -163,7 +170,7 @@ class deferent extends State<JobScreenPage> {
   TextStyle headerTextStyle() {
     return TextStyle(
       fontWeight: FontWeight.bold,
-      fontSize: 24,
+      fontSize: 20,
     );
   }
 
