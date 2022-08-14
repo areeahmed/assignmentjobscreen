@@ -17,15 +17,7 @@ class deferent extends State<JobScreenPage> {
     'Halabja'
   ];
 
-  List<String> typeList = [
-    'Full Time',
-    'Part Time',
-    'Work From Home',
-    'Temporary',
-    'At Will',
-    'Internship',
-    'Seasonal'
-  ];
+  List<String> typeList = ['Full Time', 'Part Time', 'Remote', 'Intern'];
 
   List<String> categoryList = [
     'Accounting and Consulting',
